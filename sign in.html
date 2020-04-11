@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SIGN UP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+<style>
+body {
+  background-image:url(img/background.jpg);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.logintab{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+  .logintab a{
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(151, 148, 148, 0.829);
+    padding-bottom: 5px;
+    transition: border-bottom 0.5s linear;
+  }
+  .logintab a:hover{
+    color: black;
+    padding-bottom: 10px;
+  }
+  .border-act a{
+    color: black !important; 
+    padding-bottom: 10px;
+  }
+  .logo img{
+    height: 100px;
+    width: auto;
+  }
+  .lefttab{
+    display: flex;
+    justify-content: right;
+    padding: 35px;
+  
+  }
+  .logintab > .lefttab > div{
+    margin-left: 35px;
+  }
+  .righttab{
+    display: flex;
+    justify-content:flex-end;
+    padding: 35px;
+  }
+  .logintab > .righttab > div {
+    margin-right: 40px;
+  }
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color:bisque;
+  opacity: 0.7;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color:dimgrey;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid grey;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF63;
+  color: white;
+  padding: 20px 100px;
+  margin: 8px 450px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="logintab">
+            <div class="lefttab">
+            <!-- home, booking, contact...etc -->
+            <div class="hometab">
+                <a href="mainpage.html">HOME</a>
+            </div>
+
+            <div class="bookflight">
+                <a href="index.html">Flight Booking</a>
+            </div>
+            <div class="contact-us">
+                <a href="about us.html">About us</a>
+            </div>
+
+            </div>
+            <div class="righttab">
+            <div class="login">
+            <a href="login.html">LOGIN</a>
+            </div>
+            <div class="myacc">
+                <a href="sign in.html">Sign up</a>
+            </div>
+            </div>
+        </div>
+<form action="/action_page.php">
+  <div class="container">
+    <h1>DID NOT REGISTERD YET??</h1>
+    <p>THEN WHAT ARE YOU WAITING FOR...REGISTER NOW!!</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <hr>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <a href="payment%20page.html" class="registerbtn">Register</a>
+  </div>
+  
+  <div class="container signin">
+    <p>Already have an account? <a link type="text/html" rel="search" href="login.html">Sign in</a>.</p>
+  </div>
+</form>
+
+</body>
+</html>
